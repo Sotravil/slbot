@@ -1,4 +1,4 @@
-# wabot-aq
+# Sotravil.bot
 Simple WhatsApp Bot
 
 ### FOR TERMUX USER
