@@ -1,7 +1,7 @@
 # Sotravil.bot
 Simple WhatsApp Bot
 
-### FOR TERMUX USER
+### PARA USUARIOS TERMUX
 ```bash
 > pkg update && pkg upgrade
 > pkg install git -y
@@ -12,14 +12,14 @@ Simple WhatsApp Bot
 > cd sotravil.bot
 > npm install
 ```
-###### Run
+###### PARA LANZARLO
 ```bash
 > node . [<session name>] (session name is optional)
 ```
 
 ---------
 
-### FOR WINDOWS/VPS/RDP USER
+### PARA USUARIOS DE WINDOWS/VPS/RDP
 * Download And Install Git [`Click Here`](https://git-scm.com/downloads) <br>
 * Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download) <br>
 * Download And Install FFMPEG [`Click Here`](https://ffmpeg.org/download.html) (don't forget to path) 
@@ -29,7 +29,7 @@ Simple WhatsApp Bot
 > cd sotravil.bot
 > npm install
 ```
-###### Run
+###### PARA LANZARLO
 ```bash
 > node index.js
 ```
