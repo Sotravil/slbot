@@ -1,4 +1,4 @@
-const { fetchBase64 } = require('./fether') // Continuação dos sistemas aqui presentes, é aqui que está a fabrica de memes
+const { fetchBase64 } = require('./fether') // Continuación de los sistemas presentes aquí, aquí es donde se encuentra la fábrica de memes
 
 const custom = async (imageUrl, top, bottom) => new Promise((resolve, reject) => {
     topText = top.trim().replace(/\s/g, '_').replace(/\?/g, '~q').replace(/\%/g, '~p').replace(/\#/g, '~h').replace(/\//g, '~s')
