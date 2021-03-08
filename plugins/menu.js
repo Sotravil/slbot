@@ -35,21 +35,21 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     let totalreg = Object.keys(global.DATABASE._data.users).length
     let rtotalreg = Object.values(global.DATABASE._data.users).filter(user => user.registered == true).length
     let tags = {
-      'main': 'Main',
-      'xp': 'Exp & Limit',
-      'sticker': 'Sticker',
-      'kerang': 'Kerang Ajaib',
-      'quotes': 'Quotes',
+      'main': 'Principal',
+      'xp': 'Experiencia y limites',
+      'sticker': 'Stickers',
+      'kerang': 'Concha mágica xd',
+      'quotes': 'preguntas',
       'admin': 'Admin',
-      'group': 'Group',
+      'group': 'Grupo',
       'internet': 'Internet',
       'downloader': 'Downloader',
-      'tools': 'Tools',
-      'fun': 'Fun',
-      'jadibot': 'Jadi Bot',
-      'owner': 'Owner',
+      'tools': 'Herramientas',
+      'fun': 'diversion',
+      'jadibot': 'del Bot',
+      'owner': 'Dueño',
       'host': 'Host',
-      'advanced': 'Advanced',
+      'advanced': 'Avansado',
       'info': 'Info',
       '': 'No Category',
     }
@@ -75,18 +75,18 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     conn.menu = conn.menu ? conn.menu : {}
     let before = conn.menu.before || `
 ╭─「 ${conn.user.name} 」
-│ Hai, %name!
+│ Hola, %name!
 │
 │ *%exp XP*
-│ Tersisa *%limit Limit*
+│ limites al dia *%limit Limit*
 │
-│ Tanggal: *%week %weton, %date*
-│ Waktu: *%time*
+│ Fecha: *%week %weton, %date*
+│ hora: *%time*
 │
 │ Uptime: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg
 │ Github:
-│ %github
+│ https://github.com/Sotravil/sotravil.bot
 ╰────
 %readmore`
     let header = conn.menu.header || '╭─「 %category 」'
@@ -110,14 +110,14 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       npmname: package.name,
       npmdesc: package.description,
       version: package.version,
-      github: package.homepage ? package.homepage.url || package.homepage : '[unknown github url]',
+      github: package.homepage ? package.homepage.url || package.homepage : '[https://github.com/Sotravil/sotravil.bot]',
       exp, limit, name, weton, week, date, time, totalreg, rtotalreg,
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
     conn.reply(m.chat, text.trim(), m)
   } catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    conn.reply(m.chat, 'lo siento, hubo un error en el menu', m)
     throw e
   }
 }
