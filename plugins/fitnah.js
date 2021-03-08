@@ -17,7 +17,7 @@ let handler = async (m, { conn, text }) => {
     }
   })
 }
-handler.command = /^(fitnah|fakereply)$/
+handler.command = /^(calumnia|fitnah|fakereply)$/
 
 module.exports = handler
 
