@@ -9,8 +9,8 @@ Simple WhatsApp Bot
 > pkg install nodejs -y
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
-> git clone https://github.com/Sotravil/sotravil.bot
-> cd sotravil.bot
+> git clone https://github.com/Sotravil/sLbot
+> cd slbot
 > npm install
 > npm install ffmpeg
 ```
