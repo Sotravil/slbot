@@ -1,10 +1,10 @@
 {
-    "botName": "BOT_NAME",
-    "ownerName": "YOUR_NAME",
-    "XteamKey": "YOUR_APIKEY",            
-    "ownerNumber": "62855xxxxxxxx@s.whatsapp.net",
+    "botName": "SOTRAVIL_BOT",
+    "ownerName": "Sotravil_Last",
+    "XteamKey": "https://api.xteam.xyz",            
+    "ownerNumber": "19728806294@s.whatsapp.net",
     "botPrefix": "!",
-    "GrupLimitz": "2",
-    "UserLimitz": "20",
+    "GrupLimitz": "5",
+    "UserLimitz": "30",
     "CeerTod": "𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃"
 }
