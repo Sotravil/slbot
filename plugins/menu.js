@@ -80,13 +80,13 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │ *%exp XP*
 │ limites al dia *%limit Limit*
 │
-│ Fecha: *%week %weton, %date*
+│ Fecha: *%week %day, %date*
 │ hora: *%time*
 │
 │ Uptime: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg
 │ Github:
-│ https://github.com/Sotravil/sotravil.bot
+│ https://github.com/Sotravil/slbot
 ╰────
 %readmore`
     let header = conn.menu.header || '╭─「 %category 」'
