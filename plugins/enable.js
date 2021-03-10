@@ -31,7 +31,7 @@ ${usedPrefix}disable welcome
 `.trim())
   }
   m.reply(`
-*${type}* berhasil di *${isEnable ? 'nyala' : 'mati'}kan* untuk ${isAll ? 'bot ini' : 'chat ini'}
+*${type}* se ha *${isEnable ? 'activado' : 'mati'}correctamente* para ${isAll ? 'bot ini' : 'este chat'}
 `.trim())
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
