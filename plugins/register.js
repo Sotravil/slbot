@@ -23,7 +23,7 @@ let handler = async function (m, { text, usedPrefix }) {
 ╰────
 `.trim())
 }
-handler.help = ['rg', 'registrar', 'reg', 'register'].map(v => v + '<nombre>.<edad>')
+handler.help = ['rg', 'registrar', 'reg', 'register'].map(v => v + 'para registrarse coloque <nombre>.<edad>')
 handler.tags = ['exp']
 
 handler.command = /^(registrarse|reg(ister)?)$/i
