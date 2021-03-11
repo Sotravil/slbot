@@ -2,7 +2,7 @@ const { createHash } = require('crypto')
 let Reg = /(.*)([.|])([0-9]*)$/i
 let handler = async function (m, { text, usedPrefix }) {
   let user = global.DATABASE._data.users[m.sender]
-  if (user.registered === true) throw `Usted ya está registrado\nMau reinscripción? ${usedPrefix}unreg <SN|SERIAL NUMBER>`
+  if (user.registered === true) throw `Usted ya está registrado\nquiere reinscribirse? ${usedPrefix}unreg <SN|SERIAL NUMBER>`
   if (!Reg.test(text)) throw `Formato incorrecto\n*para registrarse coloque ${usedPrefix}registrar <nombre>.<edad>*`
   let [_, name, splitter, age] = text.match(Reg)
   if (!name) throw 'El nombre no puede estar vacío (alfanumérico)'
