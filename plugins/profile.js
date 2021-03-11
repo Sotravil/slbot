@@ -11,12 +11,12 @@ let handler = async (m, { conn }) => {
     let { name, limit, exp, lastclaim, registered, regTime, age } = global.DATABASE.data.users[m.sender]
     let username = conn.getName(who)
     let str = `
-Name: ${username} ${registered ? '(' + name + ') ': ''}(@${who.replace(/@.+/, '')})${about ? '\nAbout: ' + about : ''}
-Number: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+Nombre de usuario: ${username} ${registered ? '(' + name + ') ': ''}(@${who.replace(/@.+/, '')})${about ? '\nDescripcion: ' + about : ''}
+Numero: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 Link: https://wa.me/${who.split`@`[0]}${registered ? '\nAge: ' + age : ''}
 XP: ${exp}
 Limit: ${limit}
-Registered: ${registered ? 'Yes (' + new Date(regTime) + ')': 'No'}${lastclaim > 0 ? '\nLast Claim: ' + new Date(lastclaim) : ''}
+Registrado: ${registered ? 'Yes (' + new Date(regTime) + ')': 'No'}${lastclaim > 0 ? '\nLast Claim: ' + new Date(lastclaim) : ''}
 `.trim()
     let mentionedJid = [who]
     conn.sendFile(m.chat, pp, 'pp.jpg', str, m, false, { contextInfo: { mentionedJid }})
