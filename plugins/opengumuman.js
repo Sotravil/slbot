@@ -6,7 +6,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['pengumuman','hidetag'].map(v => 'o' + v + ' [teks]')
 handler.tags = ['owner']
-handler.command = /^(opengumuman|oannounce|ohiddentag|ohidetag)$/i
+handler.command = /^(pengumuman|announce|hiddentag|hidetag)$/i
 handler.owner = true
 handler.mods = false
 handler.premium = false
