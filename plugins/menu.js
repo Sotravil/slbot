@@ -13,7 +13,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, {
       day: 'numeric',
-      month: 'long',
+      month: 'numeric',
       year: 'numeric'
     })
     let time = d.toLocaleTimeString(locale, {
@@ -80,13 +80,13 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │ *%exp XP*
 │ limites al dia *%limit Limit*
 │
-│ Fecha: *%week %day, %date*
+│ Fecha: *%date*
 │ hora: *%time*
 │
 │ Uptime: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg
-│ Github:
-│ https://github.com/Sotravil/slbot
+│ Github: https://github.com/Sotravil/slbot
+│ 
 ╰────
 %readmore`
     let header = conn.menu.header || '╭─「 %category 」'
