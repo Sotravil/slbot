@@ -155,10 +155,10 @@ module.exports = {
 
           m.isCommand = true
           let xp = 'exp' in plugin ? parseInt(plugin.exp) : 9 // XP Earning per command
-          if (xp > 99) m.reply('Ngecit -_-') // Hehehe
+          if (xp > 99) m.reply('Nop -_-') // Hehehe
           else m.exp += xp
           if (!isPrems && plugin.limit && global.DATABASE._data.users[m.sender].limit < plugin.limit * 1) {
-            this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
+            this.reply(m.chat, `Se han terminado sus limites, compre mas a traves de *${usedPrefix}buy*`, m)
             continue // Limit habis
           }
           try {
@@ -192,7 +192,7 @@ module.exports = {
             }
           } finally {
             // m.reply(util.format(_user)) 
-            if (m.limit) m.reply(+ m.limit + ' Limit terpakai')
+            if (m.limit) m.reply(+ m.limit + ' Límite utilizado')
           }
     			break
   	  	}
@@ -246,7 +246,7 @@ module.exports = {
         pp = await this.getProfilePicture(user)
       } catch (e) {
       } finally {
-        let text = (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@user', '@' + user.split('@')[0]).replace('@subject', this.getName(m.key.remoteJid))
+        let text = (chat.sWelcome || this.welcome || conn.welcome || 'Bienvenido, @user!').replace('@user', '@' + user.split('@')[0]).replace('@subject', this.getName(m.key.remoteJid))
         this.sendFile(m.key.remoteJid, pp, 'pp.jpg', text, m, false, {
           contextInfo: {
             mentionedJid: [user]
@@ -265,7 +265,7 @@ module.exports = {
         pp = await this.getProfilePicture(user)
       } catch (e) {
       } finally {
-        let text = (chat.sBye || this.bye || conn.bye || 'Bye, @user!').replace('@user', '@' + user.split('@')[0])
+        let text = (chat.sBye || this.bye || conn.bye || 'Adios, @user!').replace('@user', '@' + user.split('@')[0])
         this.sendFile(m.key.remoteJid, pp, 'pp.jpg', text, m, false, {
           contextInfo: {
             mentionedJid: [user]
@@ -294,15 +294,15 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
-    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
+    rowner: 'Este comando solo puede ser utilizado por _*OWWNER!1!1!*_',
+    owner: '¡Este comando solo puede ser utilizado por _*Owner Bot*_!',
+    mods: '¡Este comando solo puede ser utilizado por _*Moderadores*_!',
     premium: 'Perintah ini hanya untuk member _*Premium*_ !',
-    group: 'Perintah ini hanya dapat digunakan di grup!',
-    private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-    admin: 'Perintah ini hanya untuk *Admin* grup!',
-    botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-    unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*'
+    group: '¡Este comando solo se puede usar en *grupos* !',
+    private: '¡Este comando solo se puede usar en chats privados!',
+    admin: '¡Este comando es solo para *Admins* del grupo!',
+    botAdmin: '¡Haga al bot *Admin* para usar este comando!',
+    unreg: 'Regístrese para usar esta función escribiendo: \n \n *# nombre.Edad* \n \n Ejemplo: *# reg sotravil.18* '
   }[type]
   if (msg) return m.reply(msg)
 }
