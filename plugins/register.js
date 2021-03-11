@@ -16,10 +16,10 @@ let handler = async function (m, { text, usedPrefix }) {
 ¡Registro exitoso!
 
 ╭─「 *Informacion* 」
-│ Nombre: *${name}*  │
-│ Edad: *${age}thn*  │
-│ SN: *${sn}*        │
-│      sl.bot        │
+│ Nombre: *${name}*  
+│ Edad: *${age}thn*  
+│ SN: *${sn}*
+│      sl.bot        
 ╰────
 `.trim())
 }
