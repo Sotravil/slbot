@@ -24,6 +24,6 @@ Registrado: ${registered ? 'Yes (' + new Date(regTime) + ')': 'No'}${lastclaim >
 }
 handler.help = ['profile [@user]']
 handler.tags = ['tools']
-handler.command = /^profile$/i
+handler.command = /^profile|perfil$/i
 module.exports = handler
 
