@@ -34,7 +34,7 @@
 ## Clonar Este Repositorio
 
 ```bash
-> git clone https://github.com/Sotravil/slwb
+> git clone https://github.com/Sotravil/slbot
 ```
 
 
