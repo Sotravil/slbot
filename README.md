@@ -51,7 +51,7 @@ Bot Basico de WhatsApp
 > pkg install nodejs -y
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
-> git clone https://github.com/Sotravil/slwb
+> git clone https://github.com/Sotravil/slbot
 > cd slwb
 > bash install.sh
 ```
@@ -68,7 +68,7 @@ Bot Basico de WhatsApp
 * Descarga e instala FFMPEG [`Click Here`](https://ffmpeg.org/download.html) (don't forget to path) 
 * Descarga e instala ImageMagick [`Click Here`](https://imagemagick.org/script/download.php) (if nulis want work,  checklist columns 1,2,3,5,6) 
 ```bash
-> git clone https://github.com/Sotravil/slwb
+> git clone https://github.com/Sotravil/slbot
 > cd slwb
 >bash install.sh
 > node index.js
